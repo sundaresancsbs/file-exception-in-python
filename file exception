@@ -1,0 +1,11 @@
+try:
+    with open("exfiles.txt","w") as f:
+        try:
+            f.write("Hello World")
+
+        except: 
+            print("Something went wrong when writing to the file")
+except:
+    print("Something went wrong when reading to the file")
+with open("exfiles.txt", "r") as f:
+    f.close()
